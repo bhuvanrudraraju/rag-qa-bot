@@ -48,7 +48,7 @@ python src/rag_bot.py --question "How often does NimbusNote sync in the backgrou
 Or start an interactive session:
 
 ```bash
-python src/rag_bot.py
+python3 src/rag_bot.py
 ```
 
 Useful demo questions:
