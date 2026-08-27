@@ -23,17 +23,6 @@ rag-qa-bot/
 └── README.md
 ```
 
-## Setup
-
-Requires Python 3.10+.
-
-```bash
-git clone <YOUR-GITHUB-REPOSITORY-URL>
-cd rag-qa-bot
-python -m venv .venv
-source .venv/bin/activate       # Windows: .venv\\Scripts\\activate
-pip install -r requirements.txt
-```
 
 The first query downloads the small free `all-MiniLM-L6-v2` model. Later runs use the local cache.
 
@@ -81,12 +70,3 @@ question → local embedding → cosine similarity ranking → confidence/topic 
 
 The `data/` directory is a copy of the task corpus from [MLSA-SRM/recruit-task-rag-docs](https://github.com/MLSA-SRM/recruit-task-rag-docs). NimbusNote is fictional and the bot intentionally answers only from this corpus.
 
-## Short video walkthrough
-
-In a 2–3 minute recording, show:
-
-1. `data/` and the retrieval code; briefly point out chunking, the embedding model, and cosine similarity.
-2. Run a factual question such as the background sync interval. Point to the cited `01-getting-started` passage.
-3. Run a troubleshooting question such as duplicate note versions. Show that the result cites `03-troubleshooting`.
-4. Ask an out-of-scope question such as “Who founded NimbusNote?” and show the explicit not-found response.
-5. Close by stating that answers are retrieved evidence, not a direct question-to-LLM wrapper.
