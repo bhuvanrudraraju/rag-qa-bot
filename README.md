@@ -42,7 +42,7 @@ The first query downloads the small free `all-MiniLM-L6-v2` model. Later runs us
 Ask one question:
 
 ```bash
-python src/rag_bot.py --question "How often does NimbusNote sync in the background?"
+python3 src/rag_bot.py --question "How often does NimbusNote sync in the background?"
 ```
 
 Or start an interactive session:
