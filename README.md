@@ -26,7 +26,7 @@ rag-qa-bot/
 
 The first query downloads the small free `all-MiniLM-L6-v2` model. Later runs use the local cache.
 
-## Run it
+## Run It
 
 Ask one question:
 
